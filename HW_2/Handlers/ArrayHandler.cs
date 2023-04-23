@@ -24,5 +24,31 @@
         {
             return string.Format("[{0}]", string.Join(", ", array));
         }
+
+        // return index of max element in array
+        // if more than one max, return first and last index of max elements as tuple
+        public static dynamic GetMaxElementIndex(int[] array)
+        {
+            if (array != null && array.Any())
+            {
+                var max = array.Max();
+                if (HasOneMax(array))
+                    return array.ToList().IndexOf(max);
+                else
+                    return (array.ToList().IndexOf(max), array.ToList().LastIndexOf(max));
+            }
+            return -1;
+        }
+
+        // return true if array has one max element, otherwise return false 
+        public static bool HasOneMax(int[] array)
+        {
+            if (array != null && array.Any())
+            {
+                int count = array.Where(el => el == array.Max()).Count();
+                return count == 1;
+            }
+            return false;
+        }
     }
 }
