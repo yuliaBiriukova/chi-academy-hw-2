@@ -18,12 +18,17 @@ namespace HW_2
             Console.Clear();
             Console.WriteLine("Select the task:");
             Console.WriteLine("\n1. Task 1. Sum and max digit in string");
+            Console.WriteLine("2. Task 2. Index of max digit in string with spaces in the beginning");
             Console.WriteLine("\n0. Exit");
             Console.Write("\nTask > ");
             switch (Console.ReadLine())
             {
                 case "1":
                     Task1.Execute();
+                    WaitUser();
+                    return true;
+                case "2":
+                    Task2.Execute();
                     WaitUser();
                     return true;
                 case "0":

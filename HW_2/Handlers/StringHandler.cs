@@ -20,5 +20,14 @@
             return Convert.ToInt32(str.Where(char.IsDigit).Select(char.GetNumericValue).Max());
         }
 
+        // return index of max digit on string without spaces 
+        public static int GetMaxDigitIndexInString(string? str)
+        {
+            if (string.IsNullOrEmpty(str) || !str.Any(char.IsDigit))
+                return -1;
+
+            string trimmedStr = str.Trim();
+            return trimmedStr.IndexOf(trimmedStr.Where(char.IsDigit).Select(c => c).Max());
+        }
     }
 }
