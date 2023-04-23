@@ -2,25 +2,18 @@
 
 Working with strings and arrays. 
 
-StringHandler.cs for Task №1 and №2.
+StringHandler.cs provides methods for working with strings in Tasks №1 and №2.
 
-ArrayHandler.cs for Task №3 and №4.
+ArrayHandler.cs provides methods for working with arrays in Tasks №3 and №4.
 
 For each task, there is a class that implements interface ITask with method Execute(). 
 
 Tasks:
 
-1. Дан текст, в котором присутствуют цифры. Требуется yайти их сумму и определить максимальную цифру.
+1. There is a text with numbers in it. You need to find their sum and determine the maximal digit.
 
-2. Дан текст, в начале которого имеются пробелы и в котором имеются цифры. Найти
-порядковый номер максимальной цифры, начиная счет с первого символа, не
-являющегося пробелом. Если максимальных цифр несколько, то должен быть найден
-номер первой из них.
+2. There is a text with spaces at the beginning and digits in it. Find the index of the maximal digit starting from the first character which is not a space. If there are several maximal digits, find index of the first of them.
 
-3. Дан массив, в котором хранится информация о количестве страниц в каждой из 100
-книг. Все страницы имеют одинаковую толщину. Определить количество страниц в
-самой толстой книге.
+3. There is an array that contains information about the number of pages in each of 100 books. All pages have the same thickness. Determine the number of pages in thickest book.
 
-4. В массиве хранится информация о максимальной скорости каждой из 40 марок
-легковых автомобилей. Определить порядковый номер самого быстрого автомобиля.
-Если таких автомобилей несколько, то должен быть найден номер первого из них и последнего из них.
+4. An array contains information about the maximum speed of each of the 40 brands of cars. Determine the index of the fastest car. If there are several such cars, the index of the first of them and the last of them should be found.
