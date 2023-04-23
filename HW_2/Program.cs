@@ -19,6 +19,7 @@ namespace HW_2
             Console.WriteLine("Select the task:");
             Console.WriteLine("\n1. Task 1. Sum and max digit in string");
             Console.WriteLine("2. Task 2. Index of max digit in string with spaces in the beginning");
+            Console.WriteLine("3. Task 3. Amount of pages in the thickest book from array");
             Console.WriteLine("\n0. Exit");
             Console.Write("\nTask > ");
             switch (Console.ReadLine())
@@ -31,10 +32,14 @@ namespace HW_2
                     Task2.Execute();
                     WaitUser();
                     return true;
+                case "3":
+                    Task3.Execute();
+                    WaitUser();
+                    return true;
                 case "0":
                     return false;
                 default:
-                    Console.WriteLine("\nInvalid input! Enter number from 0 to 4!");
+                    Console.WriteLine("\nInvalid input! Enter number from 0 to 3!");
                     WaitUser();
                     return true;
             }
