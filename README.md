@@ -2,7 +2,7 @@
 
 Working with strings and arrays. 
 
-Assignment date: 21.04.2023
+## Assignment date: 21.04.2023
 
 StringHandler.cs provides methods for working with strings in Tasks №1 and №2.
 
